@@ -1,13 +1,13 @@
 /***********************  I n c l u d e  -  F i l e  ************************
- *  
+ *
  *         Name: usr_oss_int.h
  *
  *       Author: kp
  *        $Date: 2001/01/19 14:39:49 $
  *    $Revision: 1.1 $
- * 
+ *
  *  Description: UOS internal include file
- *                      
+ *
  *     Switches: -
  *
  *-------------------------------[ History ]---------------------------------
@@ -17,7 +17,7 @@
  * Initial Revision
  *
  *---------------------------------------------------------------------------
- * (c) Copyright 2000 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+ * (c) Copyright 2000 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
 
 #include <stdlib.h>
