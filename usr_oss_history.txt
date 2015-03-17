@@ -1,0 +1,252 @@
+===== [ History of fileset LINUX/LIBSRC/usr_oss ] =====
+
+
+-----[ Revision 2.14 ]-----
+[ 2012-08-07 19:11:40 by ts ]
+men_footer.html
+ R: year out of date
+ M: year updated
+
+-----[ Revision 2.13 ]-----
+[ 2012-05-23 17:58:54 by ts ]
+key.c
+ R: Compiler warning about unused variable res on Ubuntu 12.04
+ M: removed variable and reformatted code such that result of read() is used
+
+-----[ Revision 2.12 ]-----
+[ 2012-05-14 21:37:32 by ts ]
+File /_CVS_/LINUX/LIBSRC/USR_OSS/ident.c RCS 1.17 -> RCS 1.18
+   R: new Revision of MDIS System package
+
+-----[ Revision 2.11 ]-----
+[ 2011-05-25 16:01:19 by CRuff ]
+R: unbind USR_OSS from MDIS_API
+M: change prototypes using MDIS_PATH to use U_INT32_OR64
+
+-----[ Revision 2.10 ]-----
+[ 2010-08-26 17:23:30 by CRuff ]
+B
+
+-----[ Revision 2.9 ]-----
+[ 2009-09-25 19:27:55 by CRuff ]
+R: problem in UOS_Delay on slow CPUs
+M: restore old file state; may cause problems when interrupted and
+   tickrollover occurs
+
+-----[ Revision 2.8 ]-----
+[ 2009-09-25 13:36:24 by CRuff ]
+R: MDIS5  release for linux
+M: fix compiler warnings
+
+-----[ Revision 2.7 ]-----
+[ 2009-09-08 18:19:09 by CRuff ]
+R: 1. UOS_Delay causes too short delay if tickrollover occurs and delay is
+      interrupted by signal
+   2. cosmetics
+M: 1. keep delay independent from tickrollover by not using system tick
+      differences
+   2. change statement order in UOS_Delay(), remove unused variables
+
+-----[ Revision 2.6 ]-----
+[ 2009-02-18 13:55:44 by GLeonhardt ]
+R:1. use fileset for UCLINUX
+M:1. replace LINUX with macro
+
+-----[ Revision 2.5 ]-----
+[ 2007-12-10 10:45:33 by ts ]
+|
+ ident.c
+   (AUTOCI) Checkin due to new revision 2.5 of fileset LINUX/LIBSRC/usr_oss
+
+-----[ Revision 2.4 ]-----
+[ 2007-05-11 15:25:27 by ts ]
+*** CHANGED FILES ***
+File usr_os.h
+   use SIGUSR1/2 instead SIGRTMIN for UOS_SIG_USR1/2
+
+-----[ Revision 2.3 ]-----
+[ 2007-03-28 16:32:37 by ts ]
+*** DELETED FILES ***
+File /_CVS_/COM/DOXYGENTMPL/HTML/back_lines.gif
+File /_CVS_/COM/DOXYGENTMPL/HTML/pix_blind.gif
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/back_lines.gif
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/pix_blind.gif
+*** CHANGED FILES ***
+File /_CVS_/COM/DOXYGENTMPL/DoxyfileCommon RCS 1.2 -> RCS 1.3
+   back_lines.gif, pix_blind.gif removed
+File /_CVS_/COM/DOXYGENTMPL/HTML/men_footer.html RCS 1.3 -> RCS 1.4
+   - Adapted to MEN website redesign 2006 stylesheet
+   - The following files are no longer needed:
+   	- back_lines.gif
+   	- pix_blind.gif
+File /_CVS_/COM/DOXYGENTMPL/HTML/men_header.html RCS 1.2 -> RCS 1.3
+   - Adapted to MEN website redesign 2006 stylesheet
+   - The following files are no longer needed:
+   	- back_lines.gif
+   	- pix_blind.gif
+File /_CVS_/COM/DOXYGENTMPL/HTML/men_stylesheet.css RCS 1.4 -> RCS 1.5
+   - Adapted to MEN website redesign 2006 stylesheet
+   - The following files are no longer needed:
+   	- back_lines.gif
+   	- pix_blind.gif
+File /_CVS_/COM/DOXYGENTMPL/HTML/menlogo.gif RCS 1.1 -> RCS 1.2
+   - Adapted to MEN website redesign 2006 stylesheet
+   - The following files are no longer needed:
+   	- back_lines.gif
+   	- pix_blind.gif
+File /_CVS_/COM/INCLUDE/usr_oss.h RCS 1.19 -> RCS 1.21
+   UOS_SigInit() declaration changed back
+   (because backward compatibility problems with common example programs)
+   UOS_SigInit() declaration changed
+File /_CVS_/LINUX/INCLUDE/NATIVE/MEN/usr_os.h RCS 1.6 -> RCS 1.1
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/delay_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/dl__list_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/dummy.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/errno_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/errstr_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/files.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/globals.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/ident_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/index.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/key_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/linuossigusage.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/mdelay_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/men_stylesheet.css RCS 1.2 -> RCS 1.3
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/menlogo.gif RCS 1.1 -> RCS 1.2
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/pages.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/random_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/signal_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/timer_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uos__int_8h-source.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uosdllusage.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uossigusage.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usr__oss_8h-source.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usr__oss__specification_8c.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usrosscommonspec.html RCS 1.4 -> RCS 1.5
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/ident.c RCS 1.8 -> RCS 1.9
+   (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
+
+-----[ Revision 2.2 ]-----
+[ 2005-01-31 15:24:42 by ts ]
+*** CHANGED FILES ***
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/delay_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/dl__list_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/dummy.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/errno_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/errstr_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/files.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/globals.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/ident_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/index.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/key_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/linuossigusage.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/mdelay_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/pages.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/random_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/signal_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/timer_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uos__int_8h-source.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uosdllusage.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/uossigusage.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usr__oss_8h-source.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usr__oss__specification_8c.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/DOC/html/usrosscommonspec.html RCS 1.3 -> RCS 1.4
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+File /_CVS_/LINUX/LIBSRC/USR_OSS/ident.c RCS 1.7 -> RCS 1.8
+   (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
+
+-----[ Revision 2.1 ]-----
+[ 2004-10-27 15:50:04 by kp ]
+RTAI 3.0 adaption
+
+-----[ Revision 2.0 ]-----
+[ 2004-06-09 10:29:25 by kp ]
+- changed signal numbers of UOS_SIG_USR1/2 due to problems with pthread lib
+- OSS_Delay: fixed problem with timer wrap
+- OSS_MsecTimerGet: replaced call to obsolete ftime with gettimeofday
+
+-----[ Revision 1.7 ]-----
+[ 2003-10-07 12:31:55 by kp ]
+added Doxygen files
+Ident function returns fileset revision
+uos_os.h: removed endian switches. Now controlled by Makefile
+
+-----[ Revision 1.6 ]-----
+[ 2003-06-06 09:34:22 by kp ]
+Added dl_list.c
+added UOS_ErrStringTs
+Changed headers for doxygen
+Temp. Workaround for UOS_Delay when signals received during wait
+
+-----[ Revision 1.5 ]-----
+[ 2003-04-11 16:16:45 by kp ]
+usr_os.h: reworked for final RTAI port
+signal.c: removed debug outputs, ticks was not defined!
+
+-----[ Revision 1.4 ]-----
+[ 2003-02-21 13:24:19 by kp ]
+added UOS_ErrnoSet
+
+-----[ Revision 1.3 ]-----
+[ 2002-05-31 15:13:04 by kp ]
+UOS_Ident 1.3:
+   Some routines now set errno in addition to return code on failure.
+   Fixed: missing counter decrement in UOS_SigExit()
+
+-----[ Revision 1.2 ]-----
+[ 2001-09-18 15:21:35 by kp ]
+Ident.c 1.2
+   Ident string changed
+signal.c
+   1) removed printf from UOS_SigWait
+   2) Call LocalSigHandler in UOS_SigWait
+
+-----[ Revision 1.1 ]-----
+[ 2001-01-19 14:39:53 by kp ]
+Initial Revision
+
