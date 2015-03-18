@@ -3,8 +3,8 @@
  *        \file  signal.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2003/06/06 09:30:17 $
- *    $Revision: 1.6 $
+ *        $Date: 2013/04/15 19:09:07 $
+ *    $Revision: 1.7 $
  * 
  * 	   \project  MDIS4Linux USR_OSS lib
  *
@@ -15,6 +15,10 @@
 /*-------------------------------[ History ]---------------------------------
  *
  * $Log: signal.c,v $
+ * Revision 1.7  2013/04/15 19:09:07  ts
+ * M: compile failed with newer kernels
+ * R: replaced struct siginfo with siginfo_t
+ *
  * Revision 1.6  2003/06/06 09:30:17  kp
  * Changed headers for doxygen
  *
@@ -37,7 +41,7 @@
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuernberg, Germany 
  ****************************************************************************/
-static const char RCSid[]="$Id: signal.c,v 1.6 2003/06/06 09:30:17 kp Exp $";
+static const char RCSid[]="$Id: signal.c,v 1.7 2013/04/15 19:09:07 ts Exp $";
 
 /*! \page linuossigusage
 
@@ -264,7 +268,7 @@ int32 UOS_SigUnMask(void)
 int32 UOS_SigWait(u_int32 msec, u_int32 *sigCodeP)
 {
 	struct timespec ts;
-	struct siginfo sinfo;
+	siginfo_t sinfo;
 	int rv;
 
 	if ( G_sigInit == 0){
