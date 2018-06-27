@@ -6,7 +6,7 @@
  *        $Date: 2003/06/06 09:30:15 $
  *    $Revision: 1.2 $
  *
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Create random integers
  *

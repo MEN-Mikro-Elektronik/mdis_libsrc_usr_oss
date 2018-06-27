@@ -6,7 +6,7 @@
  *        $Date: 2003/06/06 09:29:41 $
  *    $Revision: 1.3 $
  * 
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Error code function
  *

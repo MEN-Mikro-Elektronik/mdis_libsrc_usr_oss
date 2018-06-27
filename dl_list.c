@@ -8,7 +8,7 @@
  * 
  *  	 \brief  Double linked list routines
  *      
- *	   \project  MDIS4Linux
+ *	   \project  MDISforLinux
  *
  *    \switches  none
  */

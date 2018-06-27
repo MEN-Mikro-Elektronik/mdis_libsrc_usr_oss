@@ -6,7 +6,7 @@
  *        $Date: 2004/05/28 16:03:53 $
  *    $Revision: 1.4 $
  *
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Mikrodelay routines
  *

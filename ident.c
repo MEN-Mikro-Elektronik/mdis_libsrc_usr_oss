@@ -6,7 +6,7 @@
  *        $Date: 2012/08/07 19:11:13 $
  *    $Revision: 1.20 $
  * 
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  USR_OSS global edition history 
  *

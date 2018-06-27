@@ -6,7 +6,7 @@
  *        $Date: 2013/04/15 19:09:07 $
  *    $Revision: 1.7 $
  * 
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Signal handling routines
  *

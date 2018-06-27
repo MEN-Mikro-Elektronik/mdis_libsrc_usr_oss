@@ -6,7 +6,7 @@
  *        $Date: 2012/05/23 17:23:07 $
  *    $Revision: 1.4 $
  * 
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Check for key pressed
  *

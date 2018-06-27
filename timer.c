@@ -6,7 +6,7 @@
  *        $Date: 2004/06/09 10:27:22 $
  *    $Revision: 1.3 $
  * 
- * 	   \project  MDIS4Linux USR_OSS lib
+ * 	   \project  MDISforLinux USR_OSS lib
  *
  *  	 \brief  Timer routines
  *
