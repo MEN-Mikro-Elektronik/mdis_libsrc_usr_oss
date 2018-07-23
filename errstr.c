@@ -40,8 +40,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-static const char RCSid[]="$Id: errstr.c,v 1.2 2003/06/06 09:29:43 kp Exp $";
-
 #include "uos_int.h"
 #include <MEN/usr_ers.h>   /* UOS error string table   */
 

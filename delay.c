@@ -62,8 +62,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
  
-static const char RCSid[]="$Id: delay.c,v 1.7 2009/09/25 19:19:56 CRuff Exp $";
-
 #include "uos_int.h"
 
 /**********************************************************************/

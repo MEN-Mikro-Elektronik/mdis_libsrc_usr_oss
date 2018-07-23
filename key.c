@@ -46,7 +46,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-static const char RCSid[]="$Id: key.c,v 1.4 2012/05/23 17:23:07 ts Exp $";
 
 #include "uos_int.h"
 #include <unistd.h>

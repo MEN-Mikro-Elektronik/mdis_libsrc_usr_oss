@@ -41,7 +41,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-static const char RCSid[]="$Id: errno.c,v 1.3 2003/06/06 09:29:41 kp Exp $";
 
 #include "uos_int.h"
 

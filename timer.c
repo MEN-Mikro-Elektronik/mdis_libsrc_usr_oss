@@ -41,7 +41,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-static const char RCSid[]="$Id: timer.c,v 1.3 2004/06/09 10:27:22 kp Exp $";
 
 #include "uos_int.h"
 #include <sys/time.h>

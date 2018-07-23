@@ -44,7 +44,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-static const char RCSid[]="$Header: /dd2/CVSR/LINUX/LIBSRC/USR_OSS/mdelay.c,v 1.4 2004/05/28 16:03:53 ww Exp $";
 
 #include "uos_int.h"
 #include <time.h>

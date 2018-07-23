@@ -92,7 +92,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-static const char RCSid[]="$Header: /dd2/CVSR/LINUX/LIBSRC/USR_OSS/ident.c,v 1.20 2012/08/07 19:11:13 ts Exp $";
 
 #include "uos_int.h"
 
