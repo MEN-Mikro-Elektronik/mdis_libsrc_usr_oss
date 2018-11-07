@@ -12,23 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: key.c,v $
- * Revision 1.4  2012/05/23 17:23:07  ts
- * R: Compiler warning about unused variable res on Ubuntu 12.04
- * M: removed variable and reformatted code such that result of read() is used
- *
- * Revision 1.3  2009/09/24 09:57:05  CRuff
- * R: compiler warning on linux system
- * M: fix compiler warning
- *
- * Revision 1.2  2003/06/06 09:29:47  kp
- * Changed headers for doxygen
- *
- * Revision 1.1  2001/01/19 14:39:43  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/

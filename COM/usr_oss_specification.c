@@ -12,29 +12,7 @@
  * the USR_OSS module.
  *
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: usr_oss_specification.c,v $
- * Revision 1.5  2009/07/22 14:36:50  dpfeuffer
- * (AUTOCI) Checkin due to new revision 1.5 of fileset WINDOWS/LIBSRC/usr_oss
- *
- * Revision 1.4  2008/12/03 11:27:57  CKauntz
- * Added Page titles and removed following section names
- * Adapted references instead of section name to page name
- *
- * Revision 1.3  2003/10/07 12:29:41  kp
- * \menimages again removed. Shall be in mainpage.
- * Added page title
- *
- * \menimages again removed. Shall be in mainpage.
- * Added page title
- * 
- * Revision 1.2  2003/05/20 09:09:03  dschmidt
- * \menimages added to include images
- *
- * Revision 1.1  2003/05/09 12:25:25  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 1997-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/

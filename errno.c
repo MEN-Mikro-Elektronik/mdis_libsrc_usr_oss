@@ -12,18 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: errno.c,v $
- * Revision 1.3  2003/06/06 09:29:41  kp
- * Changed headers for doxygen
- *
- * Revision 1.2  2003/02/21 13:24:04  kp
- * added UOS_ErrnoSet
- *
- * Revision 1.1  2001/01/19 14:39:40  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/

@@ -12,18 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: timer.c,v $
- * Revision 1.3  2004/06/09 10:27:22  kp
- * replaced call to obsolete ftime with gettimeofday
- *
- * Revision 1.2  2003/06/06 09:30:19  kp
- * Changed headers for doxygen
- *
- * Revision 1.1  2001/01/19 14:39:48  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/

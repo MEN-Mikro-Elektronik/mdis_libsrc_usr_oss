@@ -12,21 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mdelay.c,v $
- * Revision 1.4  2004/05/28 16:03:53  ww
- * use casts on different places
- *
- * Revision 1.3  2003/06/06 09:30:13  kp
- * Changed headers for doxygen
- *
- * Revision 1.2  2002/05/31 15:12:14  kp
- * Routines now set errno in addition to return code on failure
- *
- * Revision 1.1  2001/01/19 14:39:45  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany
  ******************************************************************************/

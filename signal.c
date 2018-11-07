@@ -12,32 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: signal.c,v $
- * Revision 1.7  2013/04/15 19:09:07  ts
- * M: compile failed with newer kernels
- * R: replaced struct siginfo with siginfo_t
- *
- * Revision 1.6  2003/06/06 09:30:17  kp
- * Changed headers for doxygen
- *
- * Revision 1.5  2003/02/28 14:03:02  ww
- * removed debug outputs, ticks was not defined!
- *
- * Revision 1.4  2002/05/31 15:12:17  kp
- * Routines now set errno in addition to return code on failure
- *
- * Revision 1.3  2002/05/07 11:21:05  ub
- * Fixed: missing counter decrement in UOS_SigExit()
- *
- * Revision 1.2  2001/09/18 15:20:35  kp
- * 1) removed printf from UOS_SigWait
- * 2) Call LocalSigHandler in UOS_SigWait
- *
- * Revision 1.1  2001/01/19 14:39:47  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/

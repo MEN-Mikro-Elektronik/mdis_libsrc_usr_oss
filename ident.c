@@ -12,69 +12,7 @@
  *
  *    \switches  none
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: ident.c,v $
- * Revision 1.20  2012/08/07 19:11:13  ts
- * (AUTOCI) Checkin due to new revision 2.14 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.19  2012/05/23 17:56:26  ts
- * (AUTOCI) Checkin due to new revision 2.13 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.18  2012/05/14 21:34:32  ts
- * R: new Revision of MDIS System package
- *
- * Revision 1.17  2011/05/25 16:00:37  CRuff
- * (AUTOCI) Checkin due to new revision 2.11 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.16  2010/08/26 17:20:17  CRuff
- * (AUTOCI) Checkin due to new revision 2.10 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.15  2009/09/25 19:25:32  CRuff
- * (AUTOCI) Checkin due to new revision 2.9 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.14  2009/09/25 13:31:46  CRuff
- * (AUTOCI) Checkin due to new revision 2.8 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.13  2009/09/08 18:16:54  CRuff
- * (AUTOCI) Checkin due to new revision 2.7 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.12  2009/02/18 13:54:32  GLeonhardt
- * (AUTOCI) Checkin due to new revision 2.6 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.11  2007/12/10 10:44:26  ts
- * (AUTOCI) Checkin due to new revision 2.5 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.10  2007/05/11 15:21:32  ts
- * new Revision 2.4
- *
- * Revision 1.9  2007/03/28 16:32:08  ts
- * (AUTOCI) Checkin due to new revision 2.3 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.8  2005/01/31 15:24:25  ts
- * (AUTOCI) Checkin due to new revision 2.2 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.7  2004/10/27 15:46:09  kp
- * (AUTOCI) Checkin due to new revision 2.1 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.6  2004/06/09 10:28:11  kp
- * (AUTOCI) Checkin due to new revision 2.0 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.5  2003/10/07 12:30:19  kp
- * (AUTOCI) Checkin due to new revision 1.7 of fileset LINUX/LIBSRC/usr_oss
- *
- * Revision 1.4  2003/06/06 09:29:45  kp
- * Changed headers for doxygen
- *
- * Revision 1.3  2002/05/31 15:12:12  kp
- * Ident string changed
- *
- * Revision 1.2  2001/09/18 15:21:14  kp
- * Ident string changed
- *
- * Revision 1.1  2001/01/19 14:39:42  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
  * (c) Copyright 2000-2003 by MEN mikro elektronik GmbH, Nuremberg, Germany 
  ******************************************************************************/
