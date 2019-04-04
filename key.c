@@ -92,6 +92,11 @@ int32 UOS_KeyPressed( void )
  *
  * \linux temporarily switches console to raw mode
  *
+ * \linux If a signal is caught while the call is executing then
+ * the call may return even without any keypress. Therefor, it
+ * is recommended to use instead UOS_KeyPressed() within a while loop
+ * until a character was received (!=-1).
+ *
  * \sa UOS_KeyPressed
  */
 int32 UOS_KeyWait( void )
