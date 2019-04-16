@@ -27,12 +27,12 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="errno_8c.html#a1">UOS_ErrnoGet</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="errno_8c.html#a0">UOS_ErrnoGet</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get global error code (task/process specific errno). </em> <a href="#a1"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="errno_8c.html#a2">UOS_ErrnoSet</a> (u_int32 errCode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get global error code (task/process specific errno). </em> <a href="#a0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="errno_8c.html#a1">UOS_ErrnoSet</a> (u_int32 errCode)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set global error code (task/process specific errno). </em> <a href="#a2"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set global error code (task/process specific errno). </em> <a href="#a1"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Error code function. 
@@ -44,7 +44,7 @@ Error code function.
 <p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>none</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a1" doxytag="errno.c::UOS_ErrnoGet"></a><p>
+<a name="a0" doxytag="errno.c::UOS_ErrnoGet"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -74,11 +74,11 @@ Get global error code (task/process specific errno).
 <p>
 The function returns the last occured system error code for the calling task/process<p>
 <dl compact><dt><b>Returns:</b></dt><dd>value of <em>errno</em> </dd></dl>
- <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="errno_8c.html#a2">UOS_ErrnoSet</a>, <a class="el" href="usr__oss__specification_8c.html#a3">UOS_ErrStringTs</a>, <a class="el" href="usr__oss__specification_8c.html#a2">UOS_ErrString</a> </dd></dl>
+ <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="errno_8c.html#a1">UOS_ErrnoSet</a>, <a class="el" href="usr__oss__specification_8c.html#a3">UOS_ErrStringTs</a>, <a class="el" href="usr__oss__specification_8c.html#a2">UOS_ErrString</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a2" doxytag="errno.c::UOS_ErrnoSet"></a><p>
+<a name="a1" doxytag="errno.c::UOS_ErrnoSet"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -109,7 +109,7 @@ Set global error code (task/process specific errno).
 Can be used for example, by MDIS API libraries to set library specific error codes.<p>
 <dl compact><dt><b>Remarks:</b></dt><dd>This function has been added in MDIS4/2003</dd></dl>
 <dl compact><dt><b>Returns:</b></dt><dd>value of <em>errStr</em> </dd></dl>
- <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="errno_8c.html#a1">UOS_ErrnoGet</a> </dd></dl>
+ <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="errno_8c.html#a0">UOS_ErrnoGet</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -121,7 +121,7 @@ Can be used for example, by MDIS API libraries to set library specific error cod
 <!-- Footer -->
 	<p class="footer">
 	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2012 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

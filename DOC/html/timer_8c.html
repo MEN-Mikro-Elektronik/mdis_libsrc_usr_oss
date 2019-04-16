@@ -27,12 +27,12 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="timer_8c.html#a0">UOS_MsecTimerGet</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read the current timer value in milliseconds. </em> <a href="#a1"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="timer_8c.html#a2">UOS_MsecTimerResolution</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read the current timer value in milliseconds. </em> <a href="#a0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>u_int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="timer_8c.html#a1">UOS_MsecTimerResolution</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get timer resolution of <a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet()</a>. </em> <a href="#a2"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get timer resolution of <a class="el" href="timer_8c.html#a0">UOS_MsecTimerGet()</a>. </em> <a href="#a1"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Timer routines. 
@@ -44,7 +44,7 @@ Timer routines.
 <p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>none</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a1" doxytag="timer.c::UOS_MsecTimerGet"></a><p>
+<a name="a0" doxytag="timer.c::UOS_MsecTimerGet"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -73,13 +73,13 @@ Timer routines.
 Read the current timer value in milliseconds. 
 <p>
 <dl compact><dt><b>Remarks:</b></dt><dd>The UOS specification is weak. It does not specify what is the time reference of the returned value. It may be, for example, relative to January 1st 1970 or relative to system start.</dd></dl>
-Implementations must handle the situation correctly when the UOS timer wraps over from 0xffffffff to 0x0; i.e. the difference between two calls to <a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet()</a> must be correct even when the UOS timer has wrapped over.<p>
+Implementations must handle the situation correctly when the UOS timer wraps over from 0xffffffff to 0x0; i.e. the difference between two calls to <a class="el" href="timer_8c.html#a0">UOS_MsecTimerGet()</a> must be correct even when the UOS timer has wrapped over.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>current time in ms</dd></dl>
- kp note: Wrap around safe. Verified with timer_test.c <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="timer_8c.html#a2">UOS_MsecTimerResolution</a> </dd></dl>
+ kp note: Wrap around safe. Verified with timer_test.c <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="timer_8c.html#a1">UOS_MsecTimerResolution</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a2" doxytag="timer.c::UOS_MsecTimerResolution"></a><p>
+<a name="a1" doxytag="timer.c::UOS_MsecTimerResolution"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -105,10 +105,10 @@ Implementations must handle the situation correctly when the UOS timer wraps ove
     <td>
 
 <p>
-Get timer resolution of <a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet()</a>. 
+Get timer resolution of <a class="el" href="timer_8c.html#a0">UOS_MsecTimerGet()</a>. 
 <p>
 <dl compact><dt><b>Returns:</b></dt><dd>timer resolution in milliseconds.</dd></dl>
- <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet</a> </dd></dl>
+ <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="timer_8c.html#a0">UOS_MsecTimerGet</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -120,7 +120,7 @@ Get timer resolution of <a class="el" href="timer_8c.html#a1">UOS_MsecTimerGet()
 <!-- Footer -->
 	<p class="footer">
 	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2012 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

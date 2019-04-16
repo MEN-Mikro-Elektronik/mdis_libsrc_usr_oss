@@ -27,12 +27,12 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mdelay_8c.html#a5">UOS_MikroDelayInit</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mdelay_8c.html#a4">UOS_MikroDelayInit</a> ()</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialisation routine for <a class="el" href="mdelay_8c.html#a6">UOS_MikroDelay()</a>. </em> <a href="#a5"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mdelay_8c.html#a6">UOS_MikroDelay</a> (u_int32 usec)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialisation routine for <a class="el" href="mdelay_8c.html#a5">UOS_MikroDelay()</a>. </em> <a href="#a4"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mdelay_8c.html#a5">UOS_MikroDelay</a> (u_int32 usec)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Delay execution of a process by using a busy-loop. </em> <a href="#a6"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Delay execution of a process by using a busy-loop. </em> <a href="#a5"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Mikrodelay routines. 
@@ -44,7 +44,7 @@ Mikrodelay routines.
 <p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>none</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a6" doxytag="mdelay.c::UOS_MikroDelay"></a><p>
+<a name="a5" doxytag="mdelay.c::UOS_MikroDelay"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -74,18 +74,18 @@ Delay execution of a process by using a busy-loop.
 <p>
 Delays the calling process for <em>at</em> <em>least</em> <em>usec</em> by wasting CPU time in a busy loop. It can be called from signal handler context.<p>
 <dl compact><dt><b>Remarks:</b></dt><dd><em>usec</em> shall be in range 0..1000000 microseconds. <p>
-<a class="el" href="mdelay_8c.html#a5">UOS_MikroDelayInit()</a> must be called before this routine can be used.</dd></dl>
+<a class="el" href="mdelay_8c.html#a4">UOS_MikroDelayInit()</a> must be called before this routine can be used.</dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>usec</em>&nbsp;</td><td><b>IN</b> number of microseconds to delay </td></tr>
   </table>
 </dl>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
- <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mdelay_8c.html#a5">UOS_MikroDelayInit</a> </dd></dl>
+ <dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mdelay_8c.html#a4">UOS_MikroDelayInit</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a5" doxytag="mdelay.c::UOS_MikroDelayInit"></a><p>
+<a name="a4" doxytag="mdelay.c::UOS_MikroDelayInit"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -111,13 +111,13 @@ Delays the calling process for <em>at</em> <em>least</em> <em>usec</em> by wasti
     <td>
 
 <p>
-Initialisation routine for <a class="el" href="mdelay_8c.html#a6">UOS_MikroDelay()</a>. 
+Initialisation routine for <a class="el" href="mdelay_8c.html#a5">UOS_MikroDelay()</a>. 
 <p>
-This routine performs any initialisation required to execute <a class="el" href="mdelay_8c.html#a6">UOS_MikroDelay()</a>. For example, it might calibrate a delay loop counter.<p>
+This routine performs any initialisation required to execute <a class="el" href="mdelay_8c.html#a5">UOS_MikroDelay()</a>. For example, it might calibrate a delay loop counter.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>Since we don't have a timer that we can use, we try to measure a loop counter three times. The minimum time is used and then doubled to get at least the required delay.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mdelay_8c.html#a6">UOS_MikroDelay</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mdelay_8c.html#a5">UOS_MikroDelay</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -129,7 +129,7 @@ This routine performs any initialisation required to execute <a class="el" href=
 <!-- Footer -->
 	<p class="footer">
 	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2012 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

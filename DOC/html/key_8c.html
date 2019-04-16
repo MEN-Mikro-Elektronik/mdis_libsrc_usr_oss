@@ -27,12 +27,12 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="key_8c.html#a4">UOS_KeyPressed</a> (void)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="key_8c.html#a3">UOS_KeyPressed</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Check if any key pressed on console. </em> <a href="#a4"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="key_8c.html#a5">UOS_KeyWait</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Check if any key pressed on console. </em> <a href="#a3"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="key_8c.html#a4">UOS_KeyWait</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wait until any key pressed on console. </em> <a href="#a5"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wait until any key pressed on console. </em> <a href="#a4"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Check for key pressed. 
@@ -44,7 +44,7 @@ Check for key pressed.
 <p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>none</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a4" doxytag="key.c::UOS_KeyPressed"></a><p>
+<a name="a3" doxytag="key.c::UOS_KeyPressed"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -77,11 +77,11 @@ This function checks if any character is buffered in the stdin path. If so, the 
 <dl compact><dt><b>Returns:</b></dt><dd>-1 if no key pressed or ASCII code of key (0..255)</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>temporarily switches console to raw mode</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="key_8c.html#a5">UOS_KeyWait</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="key_8c.html#a4">UOS_KeyWait</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a5" doxytag="key.c::UOS_KeyWait"></a><p>
+<a name="a4" doxytag="key.c::UOS_KeyWait"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -114,7 +114,8 @@ This function waits until any character could be read from the stdin path.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>-1 if read error or ASCII code of key (0..255)</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>temporarily switches console to raw mode</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="key_8c.html#a4">UOS_KeyPressed</a> </dd></dl>
+<dl compact><dt><b>Linux notes:</b></dt><dd>If a signal is caught while the call is executing then the call may return even without any keypress. Therefor, it is recommended to use instead <a class="el" href="key_8c.html#a3">UOS_KeyPressed()</a> within a while loop until a character was received (!=-1).</dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="key_8c.html#a3">UOS_KeyPressed</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -126,7 +127,7 @@ This function waits until any character could be read from the stdin path.<p>
 <!-- Footer -->
 	<p class="footer">
 	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2012 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

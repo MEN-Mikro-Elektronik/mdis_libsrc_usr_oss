@@ -27,39 +27,39 @@
 <table border=0 cellpadding=0 cellspacing=0>
 <tr><td></td></tr>
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a6">UOS_SigInit</a> (void(*sigHandler)(u_int32 sigCode))</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a5">UOS_SigInit</a> (void(*sigHandler)(u_int32 sigCode))</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Init signal handling. </em> <a href="#a6"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a7">UOS_SigExit</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Init signal handling. </em> <a href="#a5"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a6">UOS_SigExit</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Terminate signal handling. </em> <a href="#a7"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a8">UOS_SigInstall</a> (u_int32 sigCode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Terminate signal handling. </em> <a href="#a6"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a7">UOS_SigInstall</a> (u_int32 sigCode)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install a signal to be received. </em> <a href="#a8"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a9">UOS_SigRemove</a> (u_int32 sigCode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install a signal to be received. </em> <a href="#a7"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a8">UOS_SigRemove</a> (u_int32 sigCode)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Remove signal to be received. </em> <a href="#a9"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a10">UOS_SigMask</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Remove signal to be received. </em> <a href="#a8"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a9">UOS_SigMask</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Mask all signals. </em> <a href="#a10"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a11">UOS_SigUnMask</a> (void)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Mask all signals. </em> <a href="#a9"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a10">UOS_SigUnMask</a> (void)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Unmask all signals. </em> <a href="#a11"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a12">UOS_SigWait</a> (u_int32 msec, u_int32 *sigCodeP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Unmask all signals. </em> <a href="#a10"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="signal_8c.html#a11">UOS_SigWait</a> (u_int32 msec, u_int32 *sigCodeP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wait until signal received. </em> <a href="#a12"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Wait until signal received. </em> <a href="#a11"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 Signal handling routines. 
 <p>
-<dl compact><dt><b>Author:</b></dt><dd><a href="mailto:klaus.popp@men.de">klaus.popp@men.de</a> <dl compact><dt><b>Date</b></dt><dd>2003/06/06 09:30:17 </dd></dl>
-<dl compact><dt><b>Revision</b></dt><dd>1.6 </dd></dl>
+<dl compact><dt><b>Author:</b></dt><dd><a href="mailto:klaus.popp@men.de">klaus.popp@men.de</a> <dl compact><dt><b>Date</b></dt><dd>2013/04/15 19:09:07 </dd></dl>
+<dl compact><dt><b>Revision</b></dt><dd>1.7 </dd></dl>
 </dd></dl>
 <dl compact><dt><b>Project:</b></dt><dd>MDISforLinux USR_OSS lib</dd></dl>
 <p>
 <dl compact><dt><b>Preprocessor Switches:</b></dt><dd>none</dd></dl>
 <hr><h2>Function Documentation</h2>
-<a name="a7" doxytag="signal.c::UOS_SigExit"></a><p>
+<a name="a6" doxytag="signal.c::UOS_SigExit"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -92,11 +92,11 @@ See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a genera
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a6">UOS_SigInit</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a5">UOS_SigInit</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a6" doxytag="signal.c::UOS_SigInit"></a><p>
+<a name="a5" doxytag="signal.c::UOS_SigInit"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -125,7 +125,7 @@ See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a genera
 Init signal handling. 
 <p>
 This function has to be called exactly once by the application to prepare for signal handling.<p>
-You can pass a user signal handler <em>sigHandler</em> to this routine. If you only want to use <a class="el" href="signal_8c.html#a12">UOS_SigWait()</a> to receive signals, you can pass NULL.<p>
+You can pass a user signal handler <em>sigHandler</em> to this routine. If you only want to use <a class="el" href="signal_8c.html#a11">UOS_SigWait()</a> to receive signals, you can pass NULL.<p>
 See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a general description of USR_OSS signal handling.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -135,11 +135,11 @@ See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a genera
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a7">UOS_SigExit</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a6">UOS_SigExit</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a8" doxytag="signal.c::UOS_SigInstall"></a><p>
+<a name="a7" doxytag="signal.c::UOS_SigInstall"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -176,11 +176,11 @@ See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a genera
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
 <dl compact><dt><b>Linux notes:</b></dt><dd>No <code>ERR_UOS_BUSY</code> error is returned if signal already installed. </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a9">UOS_SigRemove</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a8">UOS_SigRemove</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a10" doxytag="signal.c::UOS_SigMask"></a><p>
+<a name="a9" doxytag="signal.c::UOS_SigMask"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -208,17 +208,17 @@ See <a class="el" href="uossigusage.html">Using USR_OSS Signals</a> for a genera
 <p>
 Mask all signals. 
 <p>
-Blocks all signals (at least those installed by <a class="el" href="signal_8c.html#a8">UOS_SigInstall()</a>). All incomming signals are queued.<p>
-<dl compact><dt><b>Remarks:</b></dt><dd>UOS_SigMask and <a class="el" href="signal_8c.html#a10">UOS_SigMask()</a> do not need to support nesting. I.e. if you call <a class="el" href="signal_8c.html#a11">UOS_SigUnMask()</a> signals will be unmasked regardless how often you called <a class="el" href="signal_8c.html#a10">UOS_SigMask()</a> before.</dd></dl>
+Blocks all signals (at least those installed by <a class="el" href="signal_8c.html#a7">UOS_SigInstall()</a>). All incomming signals are queued.<p>
+<dl compact><dt><b>Remarks:</b></dt><dd>UOS_SigMask and <a class="el" href="signal_8c.html#a9">UOS_SigMask()</a> do not need to support nesting. I.e. if you call <a class="el" href="signal_8c.html#a10">UOS_SigUnMask()</a> signals will be unmasked regardless how often you called <a class="el" href="signal_8c.html#a9">UOS_SigMask()</a> before.</dd></dl>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
-<dl compact><dt><b>Linux notes:</b></dt><dd>masks all signals installed by <a class="el" href="signal_8c.html#a8">UOS_SigInstall()</a></dd></dl>
+<dl compact><dt><b>Linux notes:</b></dt><dd>masks all signals installed by <a class="el" href="signal_8c.html#a7">UOS_SigInstall()</a></dd></dl>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a11">UOS_SigUnMask</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a10">UOS_SigUnMask</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a9" doxytag="signal.c::UOS_SigRemove"></a><p>
+<a name="a8" doxytag="signal.c::UOS_SigRemove"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -257,11 +257,11 @@ If signal handling not initialized, the function returns an <code>ERR_UOS_NOT_IN
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a8">UOS_SigInstall</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a7">UOS_SigInstall</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a11" doxytag="signal.c::UOS_SigUnMask"></a><p>
+<a name="a10" doxytag="signal.c::UOS_SigUnMask"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -289,15 +289,15 @@ If signal handling not initialized, the function returns an <code>ERR_UOS_NOT_IN
 <p>
 Unmask all signals. 
 <p>
-Unmasks all signals (at least those installed by <a class="el" href="signal_8c.html#a8">UOS_SigInstall()</a>) If signals are already pending (queued), they are executed when this call is issued.<p>
+Unmasks all signals (at least those installed by <a class="el" href="signal_8c.html#a7">UOS_SigInstall()</a>) If signals are already pending (queued), they are executed when this call is issued.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success or <code>ERR_UOS_xxx</code> error code on error. On failure, UOS global errno is set to the error code</dd></dl>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a10">UOS_SigMask</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a9">UOS_SigMask</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a12" doxytag="signal.c::UOS_SigWait"></a><p>
+<a name="a11" doxytag="signal.c::UOS_SigWait"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -354,7 +354,7 @@ Notes:<ul>
 <p>
 <dl compact><dt><b>Linux notes:</b></dt><dd><code>ERR_UOS_ABORTED</code> will never be returned. Any signal not installed by UOS_SigInit will cause the standard signal handler to be invoked.</dd></dl>
 <dl compact><dt><b>Linux notes:</b></dt><dd>See <a class="el" href="linuossigusage.html#linuossigusagesect">Using USR_OSS Signals on Linux</a> to see how signals handling is implemented for Linux.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a6">UOS_SigInit</a>, <a class="el" href="signal_8c.html#a8">UOS_SigInstall</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="signal_8c.html#a5">UOS_SigInit</a>, <a class="el" href="signal_8c.html#a7">UOS_SigInstall</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -366,7 +366,7 @@ Notes:<ul>
 <!-- Footer -->
 	<p class="footer">
 	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2012 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 
