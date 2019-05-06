@@ -48,7 +48,7 @@
  library.
 */
 
-/*! \page dummy
+/*! \page ossdummy MEN logo
  \menimages
 */
 
