@@ -2,7 +2,7 @@
 @INCLUDE = DoxyfileCommon
 
 PROJECT_NAME           = "USR_OSS library for Linux"
-PROJECT_NUMBER         = "for USR_OSS Linux fileset $(MEN_FILESET_REVISION)"
+PROJECT_NUMBER         = 
 INPUT                  = .. $(MEN_COM_INC)/MEN/usr_oss.h ../COM
 OUTPUT_DIRECTORY       = .
 EXTRACT_ALL            = NO
