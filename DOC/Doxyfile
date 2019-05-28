@@ -1,7 +1,7 @@
 @INCLUDE_PATH = $(MEN_DOXYGENTMPL)
 @INCLUDE = DoxyfileCommon
 
-#MDIS_COMMIT=
+#MDIS_COMMIT=f8c4e77a8a62a42e21241215aace44541934d613
 
 PROJECT_NAME           = "USR_OSS library for Linux"
 PROJECT_NUMBER         = 
