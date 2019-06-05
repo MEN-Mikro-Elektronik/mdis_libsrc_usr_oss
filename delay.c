@@ -3,8 +3,6 @@
  *        \file  delay.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2009/09/25 19:19:56 $
- *    $Revision: 1.7 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

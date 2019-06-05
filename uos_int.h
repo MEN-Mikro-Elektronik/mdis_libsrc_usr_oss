@@ -3,8 +3,6 @@
  *         Name: usr_oss_int.h
  *
  *       Author: kp
- *        $Date: 2001/01/19 14:39:49 $
- *    $Revision: 1.1 $
  *
  *  Description: UOS internal include file
  *

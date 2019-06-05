@@ -3,8 +3,6 @@
  *        \file  timer.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2004/06/09 10:27:22 $
- *    $Revision: 1.3 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

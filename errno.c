@@ -3,8 +3,6 @@
  *        \file  errno.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2003/06/06 09:29:41 $
- *    $Revision: 1.3 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

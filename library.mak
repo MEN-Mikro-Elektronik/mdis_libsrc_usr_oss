@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #  
 #         Author: kp
-#          $Date: 2003/06/06 09:29:49 $
-#      $Revision: 1.2 $
 #                      
 #    Description: Makefile descriptor file for USR_OSS lib
 #                      
@@ -24,8 +22,13 @@
 
 
 MAK_NAME=usr_oss
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="mdis_libsrc_usr_oss_02_25-9-gbd01809-dirty_2019-05-28"
 
-MAK_SWITCH=
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+
+MAK_SWITCH= \
+		$(SW_PREFIX)$(DEF_REVISION)
 
 
 MAK_INCL=$(MEN_INC_DIR)/usr_oss.h \

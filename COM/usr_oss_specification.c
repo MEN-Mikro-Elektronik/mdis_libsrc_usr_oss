@@ -3,8 +3,6 @@
  *        \file  usr_oss_specification.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2009/07/22 14:36:50 $
- *    $Revision: 1.5 $
  * 
  *  	 \brief  MEN USR_OSS (Operating System Services) module specification.
  *

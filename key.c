@@ -3,8 +3,6 @@
  *        \file  key.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2012/05/23 17:23:07 $
- *    $Revision: 1.4 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

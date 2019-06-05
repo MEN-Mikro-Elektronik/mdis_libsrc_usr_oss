@@ -3,8 +3,6 @@
  *        \file  signal.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2013/04/15 19:09:07 $
- *    $Revision: 1.7 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

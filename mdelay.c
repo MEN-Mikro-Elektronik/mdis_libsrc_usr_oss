@@ -3,8 +3,6 @@
  *        \file  mdelay.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2004/05/28 16:03:53 $
- *    $Revision: 1.4 $
  *
  * 	   \project  MDISforLinux USR_OSS lib
  *

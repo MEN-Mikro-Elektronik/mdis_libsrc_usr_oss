@@ -3,8 +3,6 @@
  *        \file  dl_list.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2003/06/06 09:28:29 $
- *    $Revision: 1.1 $
  * 
  *  	 \brief  Double linked list routines
  *      

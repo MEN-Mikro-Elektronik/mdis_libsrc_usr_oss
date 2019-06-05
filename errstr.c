@@ -3,8 +3,6 @@
  *        \file  errstr.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2003/06/06 09:29:43 $
- *    $Revision: 1.2 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *

@@ -3,8 +3,6 @@
  *        \file  ident.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2012/08/07 19:11:13 $
- *    $Revision: 1.20 $
  * 
  * 	   \project  MDISforLinux USR_OSS lib
  *
