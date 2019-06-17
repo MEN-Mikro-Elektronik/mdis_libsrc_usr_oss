@@ -50,13 +50,15 @@
  \menimages
 */
 
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 /**********************************************************************/
 /** Return ident string of UOS module
  * \copydoc usr_oss_specification.c::UOS_Ident()
  */
 char* UOS_Ident( void )
 {
-	return("UOS - User Operating System Services: %FSREV LINUX/LIBSRC/usr_oss 2.14 2012-08-07%");
+	return( (char*) IdentString);
 }
 
 
