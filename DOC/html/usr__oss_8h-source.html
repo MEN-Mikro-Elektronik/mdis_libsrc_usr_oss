@@ -26,130 +26,130 @@
 00003 <span class="comment"> *         Name: usr_oss.h</span>
 00004 <span class="comment"> *</span>
 00005 <span class="comment"> *       Author: uf</span>
-00006 <span class="comment"> *        $Date: 2010/10/27 10:11:58 $</span>
-00007 <span class="comment"> *    $Revision: 1.24 $</span>
+00006 <span class="comment"> *</span>
+00007 <span class="comment"> *  Description: User mode system services</span>
 00008 <span class="comment"> *</span>
-00009 <span class="comment"> *  Description: User mode system services</span>
+00009 <span class="comment"> *     Switches: NO_CALLBACK, NO_SHARED_MEM, __MAPILIB</span>
 00010 <span class="comment"> *</span>
-00011 <span class="comment"> *     Switches: NO_CALLBACK, NO_SHARED_MEM, __MAPILIB</span>
-00012 <span class="comment"> *</span>
-00013 <span class="comment"> *---------------------------------------------------------------------------</span>
-00014 <span class="comment"> * Copyright (c) 1997-2019, MEN Mikro Elektronik GmbH</span>
-00015 <span class="comment"> ******************************************************************************/</span>
-00016 <span class="comment">/*</span>
-00017 <span class="comment"> * This program is free software: you can redistribute it and/or modify</span>
-00018 <span class="comment"> * it under the terms of the GNU General Public License as published by</span>
-00019 <span class="comment"> * the Free Software Foundation, either version 2 of the License, or</span>
-00020 <span class="comment"> * (at your option) any later version.</span>
-00021 <span class="comment"> *</span>
-00022 <span class="comment"> * This program is distributed in the hope that it will be useful,</span>
-00023 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
-00024 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
-00025 <span class="comment"> * GNU General Public License for more details.</span>
-00026 <span class="comment"> *</span>
-00027 <span class="comment"> * You should have received a copy of the GNU General Public License</span>
-00028 <span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
-00029 <span class="comment"> */</span>
-00030 
-00031 <span class="preprocessor">#ifndef _USR_OSS_H_</span>
-00032 <span class="preprocessor"></span><span class="preprocessor">#   define _USR_OSS_H_</span>
-00033 <span class="preprocessor"></span>
-00034 <span class="preprocessor">#include &lt;MEN/usr_os.h&gt;</span>
-00035 
-00036 <span class="preprocessor">#ifdef __cplusplus</span>
-00037 <span class="preprocessor"></span>    <span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
-00038 <span class="preprocessor">#endif</span>
-00039 <span class="preprocessor"></span>
-00040 <span class="comment">/*--------------------------------------+</span>
-00041 <span class="comment">|   DEFINES                             |</span>
-00042 <span class="comment">+--------------------------------------*/</span>
-00043 <span class="comment">/* limits */</span>
-00044 <span class="preprocessor">#define UOS_MAX_USEC    1000000     </span><span class="comment">/* max mikrodelay */</span>
-00045 
-00046 <span class="comment">/*--------------------------------------+</span>
-00047 <span class="comment">|   TYPDEFS                             |</span>
-00048 <span class="comment">+--------------------------------------*/</span>
-00049 <span class="comment">/* for easy casting function pointers (callback) */</span>
-00050 <span class="keyword">typedef</span> void (*UOS_FKT_VOIDP1)(<span class="keywordtype">void</span>*);
-00051 <span class="keyword">typedef</span> void (*UOS_FKT_VOIDP2)(<span class="keywordtype">void</span>*, <span class="keywordtype">void</span>*);
-00052 
-00053 <span class="keyword">typedef</span> <span class="keyword">struct </span>UOS_DL_NODE {    <span class="comment">/* Double linked list node */</span>
-00054     <span class="keyword">struct </span>UOS_DL_NODE *next;
-00055     <span class="keyword">struct </span>UOS_DL_NODE *prev;
-00056 } UOS_DL_NODE;
-00057 
-00058 <span class="keyword">typedef</span> <span class="keyword">struct </span>{        <span class="comment">/* Double linked list header */</span>
-00059     UOS_DL_NODE *head;
-00060     UOS_DL_NODE *tail;
-00061     UOS_DL_NODE *tailpred;
-00062 } UOS_DL_LIST;
-00063 
-00064 <span class="comment">/*--------------------------------------+</span>
-00065 <span class="comment">|   PROTOTYPES                          |</span>
-00066 <span class="comment">+--------------------------------------*/</span>
-00067 <span class="preprocessor">#ifndef __MAPILIB</span>
-00068 <span class="preprocessor"></span><span class="preprocessor">#   define __MAPILIB</span>
-00069 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-00070 <span class="preprocessor"></span>
-00071 <span class="comment">/* general */</span>
-00072 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="ident_8c.html#a0">UOS_Ident</a>(<span class="keywordtype">void</span>);
-00073 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="errno_8c.html#a0">UOS_ErrnoGet</a>(<span class="keywordtype">void</span>);
-00074 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a1">UOS_ErrnoSet</a>(u_int32 errCode);
-00075 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a2">UOS_ErrString</a>(int32 errCode);
-00076 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a3">UOS_ErrStringTs</a>(int32 errCode, <span class="keywordtype">char</span> *strBuf);
-00077 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="key_8c.html#a3">UOS_KeyPressed</a>(<span class="keywordtype">void</span>);
-00078 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="key_8c.html#a4">UOS_KeyWait</a>(<span class="keywordtype">void</span>);
-00079 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a18">UOS_Random</a>(u_int32 old);
-00080 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a19">UOS_RandomMap</a>(u_int32 val, u_int32 ra, u_int32 re);
-00081 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="timer_8c.html#a0">UOS_MsecTimerGet</a>(<span class="keywordtype">void</span>);
-00082 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="timer_8c.html#a1">UOS_MsecTimerResolution</a>(<span class="keywordtype">void</span>);
-00083 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a4">UOS_Delay</a>(u_int32 msec);
-00084 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="mdelay_8c.html#a4">UOS_MikroDelayInit</a>(<span class="keywordtype">void</span>);
-00085 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a6">UOS_MikroDelay</a>(u_int32 usec);
-00086 
-00087 <span class="comment">/* signal handling */</span>
-00088 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a9">UOS_SigInit</a>(<span class="keywordtype">void</span> (__MAPILIB *sigHandler)(u_int32 sigCode));
-00089 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a6">UOS_SigExit</a>(<span class="keywordtype">void</span>);
-00090 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a11">UOS_SigInstall</a>(u_int32 sigCode);
-00091 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a12">UOS_SigRemove</a>(u_int32 sigCode);
-00092 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a9">UOS_SigMask</a>(<span class="keywordtype">void</span>);
-00093 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a10">UOS_SigUnMask</a>(<span class="keywordtype">void</span>);
-00094 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a15">UOS_SigWait</a>(u_int32 msec, u_int32 *sigCodeP);
-00095 
-00096 <span class="comment">/* callback */</span>
-00097 <span class="preprocessor">#ifndef NO_CALLBACK</span>
-00098 <span class="preprocessor"></span><span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackInit(INT32_OR_64 path,UOS_CALLBACK_HANDLE **cbHdlP);
-00099 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackExit(UOS_CALLBACK_HANDLE **cbHdlP);
-00100 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackSet(UOS_CALLBACK_HANDLE *cbHdl,u_int32 callNr,
-00101                                        <span class="keywordtype">void</span> (*funct)(<span class="keywordtype">void</span> *appArg, <span class="keywordtype">void</span> *drvArg),
-00102                                        <span class="keywordtype">void</span> *appArg);
-00103 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackClear(UOS_CALLBACK_HANDLE *cbHdl,u_int32 callNr);
-00104 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackMask(UOS_CALLBACK_HANDLE *cbHdl);
-00105 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackUnMask(UOS_CALLBACK_HANDLE *cbHdl);
-00106 <span class="preprocessor">#endif</span>
-00107 <span class="preprocessor"></span>
-00108 <span class="comment">/* shared memory */</span>
-00109 <span class="preprocessor">#ifndef NO_SHARED_MEM</span>
-00110 <span class="preprocessor"></span><span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemInit(INT32_OR_64 path,UOS_SHMEM_HANDLE **smHdlP);
-00111 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemExit(UOS_SHMEM_HANDLE **smHdlP);
-00112 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemSet(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr,
-00113                                         u_int32 size,<span class="keywordtype">void</span> **appAddrP);
-00114 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemLink(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr,
-00115                                          u_int32 *sizeP,<span class="keywordtype">void</span> **appAddrP);
-00116 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemClear(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr);
-00117 <span class="preprocessor">#endif</span>
-00118 <span class="preprocessor"></span>
-00119 <span class="comment">/* double linked list */</span>
-00120 <span class="keyword">extern</span> UOS_DL_LIST* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a21">UOS_DL_NewList</a>(UOS_DL_LIST *l);
-00121 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a22">UOS_DL_Remove</a>(UOS_DL_NODE *n);
-00122 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a23">UOS_DL_RemHead</a>(UOS_DL_LIST *l);
-00123 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a24">UOS_DL_AddTail</a>(UOS_DL_LIST *l,UOS_DL_NODE *n);
-00124 
-00125 <span class="preprocessor">#ifdef __cplusplus</span>
-00126 <span class="preprocessor"></span>    }
-00127 <span class="preprocessor">#endif</span>
-00128 <span class="preprocessor"></span>
-00129 <span class="preprocessor">#endif </span><span class="comment">/*_USR_OSS_H_*/</span>
+00011 <span class="comment"> *---------------------------------------------------------------------------</span>
+00012 <span class="comment"> * Copyright (c) 1997-2019, MEN Mikro Elektronik GmbH</span>
+00013 <span class="comment"> ******************************************************************************/</span>
+00014 <span class="comment">/*</span>
+00015 <span class="comment"> * This library is free software; you can redistribute it and/or</span>
+00016 <span class="comment"> * modify it under the terms of the GNU Lesser General Public</span>
+00017 <span class="comment"> * License as published by the Free Software Foundation; either</span>
+00018 <span class="comment"> * version 2.1 of the License, or (at your option) any later version.</span>
+00019 <span class="comment"> *</span>
+00020 <span class="comment"> * This library is distributed in the hope that it will be useful,</span>
+00021 <span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+00022 <span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span>
+00023 <span class="comment"> * Lesser General Public License for more details.</span>
+00024 <span class="comment"> *</span>
+00025 <span class="comment"> * You should have received a copy of the GNU Lesser General License</span>
+00026 <span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+00027 <span class="comment"> */</span>
+00028 
+00029 <span class="preprocessor">#ifndef _USR_OSS_H_</span>
+00030 <span class="preprocessor"></span><span class="preprocessor">#   define _USR_OSS_H_</span>
+00031 <span class="preprocessor"></span>
+00032 <span class="preprocessor">#include &lt;MEN/usr_os.h&gt;</span>
+00033 
+00034 <span class="preprocessor">#ifdef __cplusplus</span>
+00035 <span class="preprocessor"></span>    <span class="keyword">extern</span> <span class="stringliteral">"C"</span> {
+00036 <span class="preprocessor">#endif</span>
+00037 <span class="preprocessor"></span>
+00038 <span class="comment">/*--------------------------------------+</span>
+00039 <span class="comment">|   DEFINES                             |</span>
+00040 <span class="comment">+--------------------------------------*/</span>
+00041 <span class="comment">/* limits */</span>
+00042 <span class="preprocessor">#define UOS_MAX_USEC    1000000     </span><span class="comment">/* max mikrodelay */</span>
+00043 
+00044 <span class="comment">/*--------------------------------------+</span>
+00045 <span class="comment">|   TYPDEFS                             |</span>
+00046 <span class="comment">+--------------------------------------*/</span>
+00047 <span class="comment">/* for easy casting function pointers (callback) */</span>
+00048 <span class="keyword">typedef</span> void (*UOS_FKT_VOIDP1)(<span class="keywordtype">void</span>*);
+00049 <span class="keyword">typedef</span> void (*UOS_FKT_VOIDP2)(<span class="keywordtype">void</span>*, <span class="keywordtype">void</span>*);
+00050 
+00051 <span class="keyword">typedef</span> <span class="keyword">struct </span>UOS_DL_NODE {    <span class="comment">/* Double linked list node */</span>
+00052     <span class="keyword">struct </span>UOS_DL_NODE *next;
+00053     <span class="keyword">struct </span>UOS_DL_NODE *prev;
+00054 } UOS_DL_NODE;
+00055 
+00056 <span class="keyword">typedef</span> <span class="keyword">struct </span>{        <span class="comment">/* Double linked list header */</span>
+00057     UOS_DL_NODE *head;
+00058     UOS_DL_NODE *tail;
+00059     UOS_DL_NODE *tailpred;
+00060 } UOS_DL_LIST;
+00061 
+00062 <span class="comment">/*--------------------------------------+</span>
+00063 <span class="comment">|   PROTOTYPES                          |</span>
+00064 <span class="comment">+--------------------------------------*/</span>
+00065 <span class="preprocessor">#ifndef __MAPILIB</span>
+00066 <span class="preprocessor"></span><span class="preprocessor">#   define __MAPILIB</span>
+00067 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+00068 <span class="preprocessor"></span>
+00069 <span class="comment">/* general */</span>
+00070 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="ident_8c.html#a1">UOS_Ident</a>(<span class="keywordtype">void</span>);
+00071 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="errno_8c.html#a0">UOS_ErrnoGet</a>(<span class="keywordtype">void</span>);
+00072 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a1">UOS_ErrnoSet</a>(u_int32 errCode);
+00073 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a2">UOS_ErrString</a>(int32 errCode);
+00074 <span class="keyword">extern</span> <span class="keywordtype">char</span>*   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a3">UOS_ErrStringTs</a>(int32 errCode, <span class="keywordtype">char</span> *strBuf);
+00075 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="key_8c.html#a3">UOS_KeyPressed</a>(<span class="keywordtype">void</span>);
+00076 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="key_8c.html#a4">UOS_KeyWait</a>(<span class="keywordtype">void</span>);
+00077 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a18">UOS_Random</a>(u_int32 old);
+00078 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a19">UOS_RandomMap</a>(u_int32 val, u_int32 ra, u_int32 re);
+00079 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="timer_8c.html#a0">UOS_MsecTimerGet</a>(<span class="keywordtype">void</span>);
+00080 <span class="keyword">extern</span> u_int32 __MAPILIB <a class="code" href="timer_8c.html#a1">UOS_MsecTimerResolution</a>(<span class="keywordtype">void</span>);
+00081 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a4">UOS_Delay</a>(u_int32 msec);
+00082 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="mdelay_8c.html#a4">UOS_MikroDelayInit</a>(<span class="keywordtype">void</span>);
+00083 <span class="keyword">extern</span> int32   __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a6">UOS_MikroDelay</a>(u_int32 usec);
+00084 
+00085 <span class="comment">/* signal handling */</span>
+00086 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a9">UOS_SigInit</a>(<span class="keywordtype">void</span> (__MAPILIB *sigHandler)(u_int32 sigCode));
+00087 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a6">UOS_SigExit</a>(<span class="keywordtype">void</span>);
+00088 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a11">UOS_SigInstall</a>(u_int32 sigCode);
+00089 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a12">UOS_SigRemove</a>(u_int32 sigCode);
+00090 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a9">UOS_SigMask</a>(<span class="keywordtype">void</span>);
+00091 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="signal_8c.html#a10">UOS_SigUnMask</a>(<span class="keywordtype">void</span>);
+00092 <span class="keyword">extern</span> int32 __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a15">UOS_SigWait</a>(u_int32 msec, u_int32 *sigCodeP);
+00093 
+00094 <span class="comment">/* callback */</span>
+00095 <span class="preprocessor">#ifndef NO_CALLBACK</span>
+00096 <span class="preprocessor"></span><span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackInit(INT32_OR_64 path,UOS_CALLBACK_HANDLE **cbHdlP);
+00097 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackExit(UOS_CALLBACK_HANDLE **cbHdlP);
+00098 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackSet(UOS_CALLBACK_HANDLE *cbHdl,u_int32 callNr,
+00099                                        <span class="keywordtype">void</span> (*funct)(<span class="keywordtype">void</span> *appArg, <span class="keywordtype">void</span> *drvArg),
+00100                                        <span class="keywordtype">void</span> *appArg);
+00101 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackClear(UOS_CALLBACK_HANDLE *cbHdl,u_int32 callNr);
+00102 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackMask(UOS_CALLBACK_HANDLE *cbHdl);
+00103 <span class="keyword">extern</span> int32 __MAPILIB UOS_CallbackUnMask(UOS_CALLBACK_HANDLE *cbHdl);
+00104 <span class="preprocessor">#endif</span>
+00105 <span class="preprocessor"></span>
+00106 <span class="comment">/* shared memory */</span>
+00107 <span class="preprocessor">#ifndef NO_SHARED_MEM</span>
+00108 <span class="preprocessor"></span><span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemInit(INT32_OR_64 path,UOS_SHMEM_HANDLE **smHdlP);
+00109 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemExit(UOS_SHMEM_HANDLE **smHdlP);
+00110 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemSet(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr,
+00111                                         u_int32 size,<span class="keywordtype">void</span> **appAddrP);
+00112 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemLink(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr,
+00113                                          u_int32 *sizeP,<span class="keywordtype">void</span> **appAddrP);
+00114 <span class="keyword">extern</span> int32 __MAPILIB UOS_SharedMemClear(UOS_SHMEM_HANDLE *smHdl,u_int32 smNr);
+00115 <span class="preprocessor">#endif</span>
+00116 <span class="preprocessor"></span>
+00117 <span class="comment">/* double linked list */</span>
+00118 <span class="keyword">extern</span> UOS_DL_LIST* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a21">UOS_DL_NewList</a>(UOS_DL_LIST *l);
+00119 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a22">UOS_DL_Remove</a>(UOS_DL_NODE *n);
+00120 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a23">UOS_DL_RemHead</a>(UOS_DL_LIST *l);
+00121 <span class="keyword">extern</span> UOS_DL_NODE* __MAPILIB <a class="code" href="usr__oss__specification_8c.html#a24">UOS_DL_AddTail</a>(UOS_DL_LIST *l,UOS_DL_NODE *n);
+00122 
+00123 <span class="preprocessor">#ifdef __cplusplus</span>
+00124 <span class="preprocessor"></span>    }
+00125 <span class="preprocessor">#endif</span>
+00126 <span class="preprocessor"></span>
+00127 <span class="preprocessor">#endif </span><span class="comment">/*_USR_OSS_H_*/</span>
+00128 
+00129 
 00130 
 00131 
 00132 
@@ -164,8 +164,6 @@
 00141 
 00142 
 00143 
-00144 
-00145 
 </pre></div>
 	</div>
 </div>
@@ -173,8 +171,7 @@
 <div class="footer">
 <!-- Footer -->
 	<p class="footer">
-	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Generated for USR_OSS library for Linux using <a href="http://www.doxygen.org">doxygen</a>. All Rights Reserved.
 	</p>
 </div>
 

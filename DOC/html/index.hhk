@@ -27,7 +27,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ident_8c.html"><param name="Name" value="ident.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="ident_8c.html#a0"><param name="Name" value="UOS_Ident"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="ident_8c.html#a1"><param name="Name" value="UOS_Ident"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="key_8c.html"><param name="Name" value="key.c"></OBJECT>
   <UL>
@@ -106,7 +106,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="UOS_Ident"><param name="Name" value="UOS_Ident"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="ident_8c.html#a0"><param name="Name" value="ident.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="ident_8c.html#a1"><param name="Name" value="ident.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="usr__oss__specification_8c.html#a20"><param name="Name" value="usr_oss_specification.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="UOS_KeyPressed"><param name="Name" value="UOS_KeyPressed"></OBJECT>

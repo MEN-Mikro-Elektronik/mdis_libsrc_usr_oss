@@ -86,7 +86,7 @@
     <member kind="function">
       <type>char *</type>
       <name>UOS_Ident</name>
-      <anchor>a0</anchor>
+      <anchor>a1</anchor>
       <arglist>(void)</arglist>
     </member>
   </compound>
